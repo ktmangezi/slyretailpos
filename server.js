@@ -17,8 +17,9 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB using Mongoose
-mongoose.connect('mongodb://localhost:27017/nexusposDb', {
-  useNewUrlParser: true,
+//mongoose.connect('mongodb://localhost:27017/nexusposDb', {
+mongoose.connect('mongodb+srv://slyretailpos:1234marsr@cluster0.kv9k65a.mongodb.net/ktmangezi?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
   useUnifiedTopology: true
 });
 const db = mongoose.connection;
